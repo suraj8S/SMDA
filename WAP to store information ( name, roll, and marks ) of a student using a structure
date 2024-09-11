@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cstring> // For strcpy function
+
+using namespace std;
+
+struct Student {
+    char name[50];
+    int roll;
+    float marks;
+};
+
+int main() {
+    Student student;
+
+    // Input student details
+    cout << "Enter student name: ";
+    cin.getline(student.name, 50);
+
+    cout << "Enter roll number: ";
+    cin >> student.roll;
+
+    cout << "Enter marks: ";
+    cin >> student.marks;
+
+    // Output student details
+    cout << "\nStudent Details:\n";
+    cout << "Name: " << student.name << endl;
+    cout << "Roll Number: " << student.roll << endl;
+    cout << "Marks: " << student.marks << endl;
+
+    return 0;
+}
