@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string str1, str2, result;
+
+    // Input two strings
+    cout << "Enter the first string: ";
+    getline(cin, str1);
+    cout << "Enter the second string: ";
+    getline(cin, str2);
+
+    // Concatenate strings using the + operator
+    result = str1 + str2;
+
+    // Display the concatenated string
+    cout << "Concatenated string: " << result << endl;
+
+    return 0;
+}
